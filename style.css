@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #2D2E36;
+    font-family: 'Poppins';
+}
+
+img {
+    width: 100%;
+    border-radius: .2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background: #383A45;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    max-width: 270px;
+}
+
+p.title {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 119.7%;
+}
+
+p.description {
+    color: #8D91A6;
+    font-size: .8rem;
+}
+
+.link {
+    width: .8rem;
+}
+
+@media only screen and (min-width: 550px) {
+    
+    .container {
+        max-width: 500px;
+    }
+    
+    .photo {
+        width: 9rem;
+        margin-right: 1rem;
+    }
+    
+    a {
+        display: flex;
+    }
+    
+}
+
+@media only screen and (min-width: 950px) {
+    
+    html {
+        font-size: 18px;
+    }
+    
+}
+
+.btn {
+    color:white;
+    padding: 20px 30px;
+    display: block;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+}
+
+.lucky-number {
+    display: block;
+    margin-top: 12px;
+    padding: 9px;
+    text-align: center;
+
+    
+}
+
+.ln {
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.dob {
+    padding: 19px;
+    font-size: larger;
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+}
+
+footer{
+   color:#8D91A6;
+    padding: 1rem;
+
+}
+
+.output {
+    color: red;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bolder;
+}
