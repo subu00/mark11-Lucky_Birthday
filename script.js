@@ -7,9 +7,16 @@ buttonCheck.addEventListener('click', clickHandler);
 function clickHandler() {
     const dob = birthDate.value;
     const sum = calculateSumOfBirthDate(dob);
-    if (sum && dob) {
+
+    if(luckyNumber.value < 0) {
+        result.textContent = "Please enter a positive lucky number"
+    } 
+
+    else if (sum >0 && dob  && !(luckyNumber.value == "" )) {
         birthDateIsLuckyOrNot(sum, luckyNumber.value);
-    } else {
+    } 
+    
+    else {
         result.innerText = 'Please enter the fields correctly.';
     }
 }
